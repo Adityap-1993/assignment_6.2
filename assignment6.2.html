@@ -1,0 +1,47 @@
+<!DOCTYPE html>                    <!--doctype decalaration-->
+<html>                                 <!--html start tag-->
+
+<head>
+<title>
+Assignment 6.2
+</title>
+
+
+</head>
+
+<body>                                           <!--body start tag-->
+<script>                                         <!--script tag start-->
+var arr=[3,4,5,6,76,7,8];                           <!--array decalaration-->
+
+document.write("The Original array elements are : " +arr + "<br>" );
+
+
+arr.push(45,50,20,16);                                                                      <!--pushing elements-->
+document.write("The array after pushing elements in array : " +  arr  + "<br>");
+
+document.write("Poping Elements" + " <br> ");                                                    <!--poping elements-->
+var element=arr.pop();
+document.write("Element 1 :" + element + "<br>");
+
+var element=arr.pop();
+document.write("Element 2 :" + element  + "<br>");
+
+var element=arr.pop();
+document.write("Element 3 : " +element   + "<br>");
+
+var element=arr.pop();
+document.write("Element 4 : " +element   + "<br>");
+
+var newarr=arr.slice(0,4);                                                                      <!--extracting array-->
+document.write("Extracted array : " + newarr  + "<br>");
+
+var value;
+document.write("Displaying array elements using for-of : " + "<br>" );
+for(value of arr)                                                                                    <!--iterating array using for-of loop-->
+{
+document.write( value + ",");
+}
+
+</script>                                                                              <!--script tag end-->
+</body>                                                                                 <!--body tag end-->
+</html>                                                                                     <!--html tag end-->
